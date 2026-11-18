@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="assets/rik0sec-logo.png"
+       alt="Rik0Sec CTF Logo"
+       width="200">
+</p>
+
+<h1 align="center">RIK0SEC CTF QUICK LAUNCHER</h1>
+
+<p align="center">
+  A Modular Toolkit for CTF & Cybersecurity Learning
+</p>
 # Rik0Sec CTF Quick Launcher
 
 **Rik0Sec CTF Quick Launcher** adalah aplikasi CLI berbasis Python untuk membantu pelajar dan pemula memilih pemeriksaan yang relevan saat mengerjakan **Capture The Flag (CTF)**, praktikum, dan lab keamanan siber yang memang diizinkan.
