@@ -62,8 +62,8 @@ sudo apt install -y python3 git
 Clone repository (ganti `USERNAME` dengan nama akun GitHub pemilik repository):
 
 ```bash
-git clone https://github.com/rik0sec/rik0sec-ctf-quick-launcher.git
-cd rik0sec-ctf-quick-launcher
+git clone https://github.com/rik0sec/FLAG.git
+cd FLAG
 python3 ctf_quick_launcher.py
 ```
 
@@ -89,8 +89,8 @@ Launcher adalah program CLI Python dan dapat dijalankan di lingkungan Linux pada
    ```bash
    sudo apt update
    sudo apt install -y python3 git
-   git clone https://github.com/rik0sec/rik0sec-ctf-quick-launcher.git
-   cd rik0sec-ctf-quick-launcher
+   git clone https://github.com/rik0sec/FLAG.git
+   cd FLAG
    python3 ctf_quick_launcher.py
    ```
 
@@ -111,8 +111,8 @@ Untuk pengalaman lab yang lebih terisolasi dan perilaku Linux yang lebih mendeka
    ```bash
    sudo apt update
    sudo apt install -y python3 git
-   git clone https://github.com/rik0sec/rik0sec-ctf-quick-launcher.git
-   cd rik0sec-ctf-quick-launcher
+   git clone https://github.com/rik0sec/FLAG.git
+   cd FLAG
    python3 ctf_quick_launcher.py
    ```
 
@@ -165,7 +165,7 @@ Test ini mencakup kompilasi, alur keluar menu, dan beberapa pemeriksaan read-onl
 ## Struktur project
 
 ```text
-rik0sec-ctf-quick-launcher/
+FLAG/
 ├── ctf_quick_launcher.py
 ├── README.md
 ├── PANDUAN_PENGGUNA.md
