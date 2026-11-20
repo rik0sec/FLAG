@@ -141,6 +141,16 @@ Daftar di atas hanya contoh, bukan persyaratan wajib dan tidak semua paket harus
 
 Panduan lengkap dan contoh per kategori tersedia di **[PANDUAN_PENGGUNA.md](PANDUAN_PENGGUNA.md)**.
 
+## Pengujian
+
+Jalankan smoke test dari direktori project:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Test ini mencakup kompilasi, alur keluar menu, dan beberapa pemeriksaan read-only. Lulusnya smoke test bukan jaminan semua kombinasi distro, tools eksternal, dan konfigurasi sistem telah diuji.
+
 ### Cakupan Pengujian
 
 Smoke test menggunakan Python `unittest` dengan empat pengujian:
