@@ -141,15 +141,28 @@ Daftar di atas hanya contoh, bukan persyaratan wajib dan tidak semua paket harus
 
 Panduan lengkap dan contoh per kategori tersedia di **[PANDUAN_PENGGUNA.md](PANDUAN_PENGGUNA.md)**.
 
-## Pengujian
+### Cakupan Pengujian
 
-Jalankan smoke test dari direktori project:
+Smoke test menggunakan Python `unittest` dengan empat pengujian:
 
-```bash
-python3 -m unittest discover -s tests -v
+| Test | Keterangan |
+|---|---|
+| `test_compiles` | Memeriksa kompilasi dan sintaks Python. |
+| `test_firewall_getfacl_accepts_existing_directory` | Memeriksa penggunaan getfacl pada direktori yang tersedia. |
+| `test_firewall_iptables_is_read_only` | Memastikan pemeriksaan iptables menggunakan perintah read-only. |
+| `test_menu_exit` | Memastikan launcher dapat dijalankan dan ditutup dengan benar. |
+
+### Contoh Hasil Pengujian
+
+Jika seluruh pengujian berhasil, hasil terminal akan menampilkan:
+
+```text
+Ran 4 tests in 0.122s
+
+OK
 ```
 
-Test ini mencakup kompilasi, alur keluar menu, dan beberapa pemeriksaan read-only. Lulusnya smoke test bukan jaminan semua kombinasi distro, tools eksternal, dan konfigurasi sistem telah diuji.
+Keterangan: `OK` menunjukkan seluruh pengujian berhasil dijalankan tanpa kegagalan.
 
 ## Keamanan dan batas penggunaan
 
