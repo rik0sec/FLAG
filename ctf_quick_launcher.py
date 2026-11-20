@@ -15,7 +15,9 @@ TOOLS = {
 }
 
 def header(title):
-    print("\n" + "=" * 60 + "\n " + title + "\n" + "=" * 60)
+    RED = "\033[91m"
+    RESET = "\033[0m"
+    print(f"\n{RED}" + "=" * 60 + "\n " + title + "\n" + "=" * 60 + RESET)
 
 def pause():
     input("\nTekan Enter untuk kembali...")
@@ -236,9 +238,13 @@ def main():
            "6":("Logs & incident response",logs),"7":("Firewall & ACL",firewall)}
     while True:
         header(f"RIK0SEC CTF QUICK LAUNCHER v{VERSION}")
-        print("Kali Linux | UAS Sistem Keamanan Jaringan")
-        for k,(name,_) in menus.items():print(f"  {k}. {name}")
+        print("Kali Linux | CTF & Cybersecurity Practice")
+
+        for k,(name,_) in menus.items():
+            print(f"  {k}. {name}")
+
         print("  8. Cek semua tools\n  0. Keluar")
+
         c=input("\nPilih kategori: ").strip()
         if c=="0":print("Terima kasih. Gunakan hanya pada CTF/lab berizin.");break
         if c=="8":toolcheck();pause()
